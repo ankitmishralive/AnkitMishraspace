@@ -21,7 +21,7 @@
         
         
         #background {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -53,33 +53,7 @@
             box-sizing: border-box;
         }
 
-        h1, p {
-            margin: 0;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .navbar a {
-            color: #fff;
-            margin-right: 1rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #ddd;
-        }
-
-        .text-container {
-            position: relative;
-            z-index: 2; /* Adjust the z-index to be above the background */
-        }
+       
     </style>
 
     <!-- Include your other scripts here -->
@@ -87,7 +61,7 @@
     <!-- Include Tailwind CSS first -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class='bg-black'>
 
     <div id="background">
         <css-doodle>
@@ -158,12 +132,18 @@
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                         </svg>
                     </button>
+
+                    <br> 
+
+
                 </div>
-    
-                <div style="margin-left: 10px;" class="flex justify-start font-bold mb-6 sm:text-3xl text-xl">
+
+                <div style="margin-left: 10px;" class="flex justify-start font-bold mb-2 sm:text-3xl text-xl">
                     <div class="text-purple-500">.</div>
                     <div class="text-white">.</div>
                 </div>
+    
+                
             </div>
         </div>
     </section>
@@ -174,7 +154,7 @@
     
 
     
-    <section class="text-gray-400 bg-black body-font mt-5">
+    <section class="text-gray-400 bg-black body-font">
         <div class="container mx-auto ml-auto flex md:flex-row flex-col items-center">
             <div class="lg:flex-grow md:w-1/2 lg:pr-8 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center">
                 <br> <br>
@@ -428,7 +408,7 @@ Outside of all this, I enjoy:
 
 
 
-    <section class="text-gray-400 bg-white body-font ">
+    <section class="text-gray-400 bg-white body-font mt-5 ">
         <div class="container mx-auto ml-auto flex md:flex-row flex-col items-center">
     
             <div class="lg:flex-grow md:w-1/2 lg:pr-8 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center">
@@ -537,7 +517,7 @@ Outside of all this, I enjoy:
     
     
 
-   
+
     
 </body>
 </html>

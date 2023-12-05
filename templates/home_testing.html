@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Mishra</title>
+    <link rel="icon" type="image/png" href="/static/media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background: #000;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        #content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            z-index: 1;
+            position: relative;
+            height: 100vh; /* Set the height of the container */
+        }
+
+        .animation-container {
+            position: relative;
+            height: 50vh; /* Set the height of the animation container */
+            overflow: hidden;
+            width: 100%;
+        }
+
+        css-doodle {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 600px) {
+            /* Add responsive styles if needed */
+        }
+    </style>
+
+    <!-- Include your other scripts here -->
+    <script src="/static/js/css-doodle.min.js"></script>
+    <!-- Include Tailwind CSS first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div id="background">
+        <div id="content-container">
+            <div class="animation-container">
+                <css-doodle>
+                    <style>
+                        @grid: 50x1 / 50vmin;
+                        background: radial-gradient(
+                            circle,
+                            #00b8a9,
+                            #f8f3d4,
+                            #f6416c,
+                            #ffde7d
+                        );
+                        animation: scale-up 20s linear infinite;
+
+                        @keyframes scale-up {
+                            0% {
+                                opacity: 0;
+                                transform: translate3d(0, 0, 0) rotate(0);
+                            }
+                            10% {
+                                opacity: 1;
+                            }
+                            95% {
+                                transform: translate3d(0, 0, 55vmin) rotate(360deg);
+                            }
+                            100% {
+                                opacity: 0;
+                                transform: translate3d(0, 0, 1vmin);
+                            }
+                        }
+                    </style>
+                </css-doodle>
+            </div>
+            <div>
+                <h1>Your Text Content Goes Here</h1>
+                <!-- Add more text or other content as needed -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
