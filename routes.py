@@ -8,3 +8,18 @@ def index():
 @app.route('/showcase')
 def showcase():
     return render_template('showcase/home.html')
+
+
+@app.route('/showcase/experience')
+def experience():
+    return render_template('showcase/experience.html')
+
+
+@app.route('/showcase/projects-research')
+def projects():
+    return render_template('showcase/projects.html')
+
+
+@app.route('/showcase/netcast')
+def netcast():
+    return render_template('showcase/blogs.html')
