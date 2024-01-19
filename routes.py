@@ -3,10 +3,12 @@ from flask import render_template
 
 @app.route('/')
 def index():
+    tailwindFile = "dist/css/output.css"
     return render_template('home.html')
     # return "heyy wassup"
 @app.route('/showcase')
 def showcase():
+    tailwindFile = "dist/css/output.css"
     return render_template('showcase/home.html')
 
 
