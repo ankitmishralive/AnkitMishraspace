@@ -25,3 +25,9 @@ def projects():
 @app.route('/showcase/netcast')
 def netcast():
     return render_template('showcase/blogs.html')
+
+
+
+@app.route('/showcase//netcast/read')
+def read():
+    return render_template('showcase/read.html')
