@@ -11,6 +11,11 @@ def showcase():
     tailwindFile = "dist/css/output.css"
     return render_template('showcase/home.html')
 
+@app.route('/test')
+def test():
+    tailwindFile = "dist/css/output.css"
+    return render_template('homeTest.html')
+
 
 @app.route('/showcase/experience')
 def experience():

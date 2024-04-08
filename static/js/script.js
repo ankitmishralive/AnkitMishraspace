@@ -29,6 +29,6 @@ function redirectToShowcase() {
 }
 
 function redirectSubStack() {
-    // window.location.href = "https://ankitmishraletter.substack.com/archive";
+    // window.location.href = "https://ankitmishraletter.substack.com/archive"
     window.open("https://ankitmishraletter.substack.com/archive", "_blank");
 }
