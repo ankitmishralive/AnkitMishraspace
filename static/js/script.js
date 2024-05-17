@@ -30,5 +30,12 @@ function redirectToShowcase() {
 
 function redirectSubStack() {
     // window.location.href = "https://ankitmishraletter.substack.com/archive"
-    window.open("https://ankitmishraletter.substack.com/archive", "_blank");
+    window.location.href = "/showcase/netcast";
+    // window.open("https://ankitmishraletter.substack.com/archive", "_blank");
+}
+
+function redirectToNewsLetter(){
+
+    window.location.href = "https://ankitmishraletter.substack.com/welcome"
+
 }
