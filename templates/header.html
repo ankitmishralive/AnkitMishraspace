@@ -7,13 +7,33 @@
     <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
     <script src="static/js/script.js"></script>
     <link rel="icon" type="image/png" href="/static/media/favicon.ico">
+
+    <style>
+        #animated-text {
+            white-space: nowrap; /* Ensure the text doesn't wrap */
+            overflow: hidden;    /* Hide the overflow text */
+            border-right: 2px solid black; /* Cursor effect */
+          }
+          
+          
+    </style>
+      
 </head>
 <body class="bg-white">
 
-
+    <div class="flex justify-center items-center h-screen  mt-8 " >
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-8">-------------------------- Under Development --------------------------</h1>
+            <!-- You can add additional content or styling here -->
+        </div>
+    </div>
+    
 
   <header class="bg-transparent text-black body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+    
+
         <a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
             <span class="ml-3 text-3xl font-bold text-black">Ankit Mishra</span>
         </a>

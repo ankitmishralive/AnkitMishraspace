@@ -4,8 +4,11 @@
         <div class="container mx-auto flex flex-col items-center justify-center px-5 py-2">
             <img class="w-32 h-32 mb-4 object-cover rounded-full" alt="hero" src="/static/media/ankitmishra.jpeg">
             <div class="text-center">
-                <h1 class="text-xl mb-2 font-medium text-white">Ankit Mishra</h1>
-                <p class="leading-relaxed mb-4">ML Engineer | MLOps|  Full Stack Developer | Deep Learning | Generative A.I Enthusiast </p>
+                <h1 class="text-xl mb-2 font-medium text-black">Ankit Mishra</h1>
+                <p id="animated-text" class="leading-relaxed mb-4"></p>
+
+
+
 
                 <div class="mx-auto py-8 px-6 md:flex md:items-center md:justify-between lg:px-8">
                     <div class="flex justify-center space-x-6 md:order-2 mx-auto">
@@ -133,57 +136,119 @@
     <br> <br> 
     </section>
 
+
     <section class="text-black body-font overflow-hidden">
-        <div class="container mx-auto px-5 mt-8 ">
-    
+        <div class="container mx-auto px-5 mt-8 bg-stone-700">
             <h1 class="text-3xl font-medium text-black title-font mb-2">Education</h1>
-            <br> <br>
-            <div class="-my-8 divide-y-2 divide-gray-100">
-                <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:flex-grow">
-                            <h2 class="text-xl font-medium text-black title-font mb-2">Btech in Artificial Intelligence & Machine Learning</h2>
-                            <p class="leading-relaxed text-black">Thakur College of Engineering & Technology</p>
-                            <p class="leading-relaxed text-black">Nov 2022 - July 2025</p>
-                            <p class="leading-relaxed text-black">CGPA: 9.11 </p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.tcetmumbai.in/" target="_blank" >Visit
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
+            <br><br>
+            <div class="max-w-md mx-auto">
+                <div class=" shadow-md rounded-lg overflow-hidden mb-4 flex ">
+                    <div class="w-20 bg-gray-200 flex items-center justify-center">
+                        <img src="/static/media/tcet.jpeg" alt="College Logo" class="h-16">
                     </div>
-    
-                    <div class="py-4 flex flex-wrap md:flex-nowrap">
-                        <div class="md:flex-grow">
-                            <h2 class="text-xl font-medium text-black title-font mb-2">Diploma in Computer Science Engineering</h2>
-                            <p class="leading-relaxed text-black">S.H Jondhale Polytechnic</p>
-                            <p class="leading-relaxed text-black">Aug 2019 - Aug 2022</p>
-                            <p class="leading-relaxed text-black">Percentage: 87% </p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4" href="http://jondhalepolytechnic.org/" target="_blank">Visit
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
+                    <div class="p-4 flex-grow">
+                        <h2 class="text-lg font-medium text-black title-font mb-2">Btech in AI & Machine Learning</h2>
+                        <p class="leading-relaxed text-sm text-gray-600">Thakur College of Engineering & Technology</p>
+                        <p class="leading-relaxed text-sm text-gray-600">Nov 2022 - July 2025</p>
+                        <p class="leading-relaxed text-sm text-gray-600">CGPA: 9.11</p>
+                        <a class="text-indigo-500 inline-flex items-center mt-2" href="https://www.tcetmumbai.in/" target="_blank">Visit
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
+                </div>
     
-                    <div class="py-4 flex flex-wrap md:flex-nowrap">
-                        <div class="md:flex-grow">
-                            <h2 class="text-xl font-medium text-black title-font mb-2">Applied Learner</h2>
-                            <p class="leading-relaxed text-black">Internet & Books</p>
-                            <p class="leading-relaxed text-black">Sept 2019</p>
-                        </div>
+                <!-- Add more education entries similarly -->
+    
+                <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-4 flex">
+                    <div class="w-20 bg-gray-200 flex items-center justify-center">
+                        <img src="/static/media/shj.jpeg" alt="College Logo" class="h-16">
                     </div>
+                    <div class="p-4 flex-grow">
+                        <h2 class="text-lg font-medium text-black title-font mb-2">Diploma in Computer Science Engineering</h2>
+                        <p class="leading-relaxed text-sm text-gray-600">S.h Jondhale Polytechnic</p>
+                        <p class="leading-relaxed text-sm text-gray-600">Aug 2019 - July 2022</p>
+                        <p class="leading-relaxed text-sm text-gray-600">Percentage: 87</p>
+                        <a class="text-indigo-500 inline-flex items-center mt-2" href="https://www.tcetmumbai.in/" target="_blank">Visit
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
     
+                <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-4 flex">
+                    <div class="w-20 bg-gray-200 flex items-center justify-center">
+                        <img src="/static/media/appliedLearner.png" alt="College Logo" class="h-16">
+                    </div>
+                    <div class="p-4 flex-grow">
+                        <h2 class="text-lg font-medium text-black title-font mb-2">Applied Learner</h2>
+                        <p class="leading-relaxed text-sm text-gray-600">Internet & Books</p>
+                        <p class="leading-relaxed text-sm text-gray-600">2019</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <br> <br> 
+        <br><br>
     </section>
     
+    
+    
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const categories = [
+                "ML Engineer",
+                "Software Engineer",
+                "MLOps Engineer",
+                "Full Stack Developer",
+                "Deep Learning Engineer",
+                "Generative A.I Enthusiast"
+            ];
+            let categoryIndex = 0;
+            const speed = 10; // Speed of showing each category in milliseconds
+            const fadeOutSpeed = 40; // Speed of fading out each category in milliseconds
+            const animatedTextElement = document.getElementById("animated-text");
+        
+            function showCategory() {
+                // Show the current category
+                animatedTextElement.textContent = categories[categoryIndex];
+                categoryIndex = (categoryIndex + 1) % categories.length;
+        
+                // Fade out after a delay
+                setTimeout(function() {
+                    fadeOutCategory();
+                }, speed);
+            }
+        
+            function fadeOutCategory() {
+                // Fade out the current category
+                let opacity = 1;
+                const interval = setInterval(function() {
+                    if (opacity > 0) {
+                        opacity -= 0.1;
+                        animatedTextElement.style.opacity = opacity;
+                    } else {
+                        // Reset opacity and show the next category
+                        clearInterval(interval);
+                        animatedTextElement.style.opacity = 1;
+                        showCategory();
+                    }
+                }, fadeOutSpeed);
+            }
+        
+            // Start the animation
+            showCategory();
+        });
+        </script>
+        
+
+        
+        
 
 
 

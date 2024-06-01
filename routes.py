@@ -26,6 +26,10 @@ def experience():
 def projects():
     return render_template('showcase/projects.html')
 
+@app.route('/showcase/projects-research/detail')
+def projectDetail():
+    return render_template('showcase/projectDetail.html')
+
 
 @app.route('/showcase/netcast')
 def netcast():
