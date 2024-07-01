@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Showcase</title>
     <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <script src="static/js/script.js"></script>
     <link rel="icon" type="image/png" href="/static/media/favicon.ico">
 
@@ -19,23 +20,27 @@
     </style>
       
 </head>
-<body class="bg-white">
+<body class="bg-black text-white">
 
-    <div class="flex justify-center items-center h-screen  mt-8 " >
-        <div class="text-center">
-            <h1 class="text-4xl font-bold mb-8">-------------------------- Under Development --------------------------</h1>
-            <!-- You can add additional content or styling here -->
+
+    <div class="bg-gray-200">
+        <div class="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg shadow-md text-center">
+            <p class="font-semibold">Under Development</p>
+            <p class="text-sm mt-2"> Not Updated... & It is currently under development.</p>
         </div>
     </div>
     
 
-  <header class="bg-transparent text-black body-font">
+
+    
+
+  <header class="bg-transparent  body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
     
 
         <a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-            <span class="ml-3 text-3xl font-bold text-black">Ankit Mishra</span>
+            <span class="ml-3 text-3xl font-bold ">Ankit Mishra</span>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center leading-relaxed">
             <a href="/showcase" class="mr-5 hover:text-pink-600">About</a>
@@ -43,6 +48,11 @@
             <a href="/showcase/projects-research" class="mr-5 hover:text-pink-600">Projects</a>
             <a href="/showcase/netcast" class="mr-5 hover:text-pink-600">Blogs</a>
         </nav>
-        <button class="inline-flex items-center text-white bg-black border-0 py-1 px-3 focus:outline-none hover:bg-blue-950 rounded-full text-base mt-4 md:mt-0">Resume</button>
+       
+
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">
+            Resume
+          </button>
+
     </div>
 </header>
